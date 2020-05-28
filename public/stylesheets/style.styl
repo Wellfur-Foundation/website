@@ -1,0 +1,229 @@
+// RFS import
+@import "../../node_modules/rfs/stylus.styl";
+
+// Font imports
+@font-face
+   font-family logo
+   src url(/fonts/Gilroy-ExtraBold.otf)
+  
+@font-face
+   font-family head
+   src url(/fonts/Gilroy-ExtraBold.otf)
+
+@font-face
+   font-family body
+   src url(/fonts/Lato-Regular.ttf)
+
+@font-face
+   font-family ApexSansBold
+   src url(/fonts/ApexSansBoldST.ttf)
+   
+// Colour palette
+white = #ffffff
+black = #000000
+darkGrey = #555555
+lightGrey = #999
+cream = #fff8e7
+brown = #482218
+
+brownGradient = linear-gradient(175deg, #772f1a 0%, #f2a65a 74%)
+
+// General style
+body
+	font-family 'body'
+	margin 0
+	padding 0
+	background-color cream
+
+h1, h2, h3, h4, h5, h6
+	font-family 'head'
+	color brown
+
+h1
+	rfs(2.3rem)
+
+button
+	background-color rgba(0,0,0,0)
+	color brown
+	border-radius 10px
+	border-color brown
+	border-width 4px
+	border-style solid
+	padding 5px 20px 5px 20px
+	transition 0.2s
+	margin-right 5px
+	margin-bottom 10px
+
+button:hover
+	background-color  brown
+	color cream
+	
+a
+	text-decoration none
+
+img
+	width 100%
+
+video
+	width  100%
+
+.widthRestriction
+	width 90%
+	margin 0 auto
+
+.bold
+	font-weight bold
+
+.center
+	text-align center
+
+.github
+	font-family 'ApexSansBold'
+	font-weight bolder
+
+.gradient 
+	width 80%
+	height 8px
+	margin 0 auto
+	margin-top 30px
+	margin-bottom 40px
+	border-radius 20px
+	background-color #00ff00
+
+#brownGrad
+	background-image brownGradient
+
+// Topnav
+nav
+   width 100%
+   display inline-block
+   padding-top 15px
+   padding-bottom 10px
+   position fixed 
+   top 0px
+   text-align right
+   white-space nowrap
+   overflow-x auto
+   z-index 2
+   background-color white
+   box-shadow 7px 7px 21px -10px rgba(153,153,153,0.89)
+
+.logo, .topnavLinks
+   display inline-block
+
+.logo
+   float left
+   padding-right 20px
+   font-family 'logo'
+   color brown
+   rfs(1.6rem)
+
+.topnavLinks
+   display block
+   padding-top 6px
+
+.topnavLinks a
+   margin-right 13px
+   transition 0.2s
+   color darkGrey
+
+.topnavLinks a:hover
+   padding-bottom 5px
+   border-bottom 1px solid darkGrey
+  
+// Slideshow
+.slideshow
+	width 100%
+	height 100%
+
+.slide
+	height 100%
+	background-position 50% 50% // x% y% x(100%)=right and y(100%)=bottom
+	background-repeat no-repeat
+	background-attachment scroll
+	background-size cover
+	padding-top 320px
+	text-align center
+	color white
+
+.slide h1
+	rfs(3rem)
+	color white
+
+.slide h2
+	color white
+
+#slide1
+	background-image url('/images/carousel/slideOne.jpg')
+
+#slide2
+	background-image url('/images/carousel/slideTwo.jpg')
+
+#slide3
+	background-image url('/images/carousel/slideThree.jpg')
+	
+// Card style
+.card
+	width 100%
+	border-radius 20px
+	background-color white
+	box-shadow 7px 7px 21px -10px rgba(153,153,153,0.89)
+	transition 0.2s
+	margin-bottom 20px
+
+.card:hover
+	box-shadow 7px 7px 35px -10px rgba(153,153,153,0.89)
+
+.card img
+	border-top-left-radius 20px
+	border-top-right-radius 20px
+
+.card h2
+	text-align center
+	padding-top 10px
+
+// Feeding Drive
+.feedingDrive video
+	border-radius 20px
+	margin-bottom 25px
+	box-shadow 7px 7px 21px -10px rgba(153,153,153,0.89)
+	transition 0.2s
+
+.feedingDrive video:hover
+	box-shadow 7px 7px 35px -10px rgba(153,153,153,0.89)
+
+.feedingDrive img
+	border-radius 20px
+	margin-bottom 25px
+	box-shadow 7px 7px 21px -10px rgba(153,153,153,0.89)
+	transition 0.2s
+
+.feedingDrive img:hover
+	box-shadow 7px 7px 35px -10px rgba(153,153,153,0.89)
+
+// Contact
+.contact a
+	text-decoration none
+	font-weight bold
+	color brown
+	margin-right 13px
+	transition 0.2s
+   	padding-bottom 5px
+   	border-bottom 1px solid cream
+
+.contact a:hover
+	padding-bottom 5px
+	border-bottom 1px solid brown
+
+#K
+	text-decoration none
+	font-weight bold
+	color brown
+	margin-right 13px
+	transition 0.2s
+   	padding-bottom 5px
+   	border-bottom 1px solid cream
+   
+#K:hover
+	padding-bottom 5px
+	border-bottom 1px solid brown
