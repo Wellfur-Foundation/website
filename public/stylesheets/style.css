@@ -30,11 +30,11 @@ h6 {
   color: #482218;
 }
 h1 {
-  font-size: calc(1.355rem + 1.26vw);
+  font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
 }
 button {
